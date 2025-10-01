@@ -1,0 +1,294 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 255);
+            font-size: 1.04rem;
+        }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 2rem;
+            
+        }
+
+        .leftSection .btn{
+            padding: 9px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .leftSection .button {
+            padding: 23px 0;
+        }
+        .leftSection .btn:hover {
+            text-decoration: underline;
+            color:#9c97f1 ;
+        }
+
+        .rightSection img {
+            width: 90%;
+        }
+
+        .purple {
+            color: rgb(170, 80, 255);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 80, 255);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 54px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 29px;
+            position: relative;
+            top: -32px;
+            left: 2px;
+        }
+
+        .verticle-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+        footer{
+            background-color: #0e0e1a;
+            
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        } 
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="2.html">About</a></li>
+                    
+                    <li><a href="1.html">Projects</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Shravani</span>
+
+                <div>and I am passionate</div>
+                
+                <span id="element"></span>
+                <div class="button">
+                    <a class="btn" href="https://1drv.ms/b/c/a22501f4136c9fa9/EcatQIQO-QVDnkR5UD1ZGqwBQwCOgv7-jcMjZiR3kFHyEw">Download Resume</a>
+                <a class="btn" href="https://github.com/Bhalerao-2004">GitHub</a>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="data:image/jpeg;base64,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">
+
+            
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+
+                    <img class="image-top" src="igurus image.png" alt="">
+
+                    <div class="verticle-title">
+                        Data scientist (2023)
+
+                    </div>
+                    <div class="vertical-desc">
+                        During my internship, I worked on real-world datasets to extract insights and build predictive models. I applied machine learning algorithms, performed data cleaning and preprocessing, and explored data trends to support business decisions. I also collaborated with the team to design and implement solutions that improved the accuracy and efficiency of data-driven processes.
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+
+                    <img class="image-top" src="analyst.png" alt="">
+
+                    <div class="verticle-title">
+                        Data Analyst (2023)
+
+                    </div>
+                    <div class="vertical-desc">
+                        As a Data Analyst intern, I was responsible for collecting, cleaning, and analyzing datasets to generate actionable insights. I developed interactive dashboards and visualizations to track business metrics, identify patterns, and present findings to stakeholders. My role involved using tools such as Excel, SQL, and visualization platforms to support data-driven reporting and decision-making.
+                    </div>
+                </div>
+            
+            <div class="vertical">
+                <img class="image-top" src="HTML5_logo_and_wordmark.svg.png" alt="">
+
+                    <div class="verticle-title">
+                        HTML Developer (2025)
+
+                    </div>
+                    <div class="vertical-desc">
+                        As an HTML Developer, I focused on creating well-structured, responsive, and accessible web pages using HTML5, CSS3, and basic scripting. I ensured cross-browser compatibility, optimized page performance, and maintained clean code for scalability. My work emphasized semantic markup and user-friendly design to deliver smooth browsing experiences.
+                    </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer.png" alt="">
+
+                    <div class="verticle-title">
+                        Frontend Developer (2025)
+
+                    </div>
+                    <div class="vertical-desc">
+                        In my role as a Frontend Developer, I worked on building interactive and dynamic web applications using technologies such as HTML, CSS, JavaScript, and modern frameworks. I translated design mockups into functional interfaces, optimized user experiences, and implemented responsive layouts for different devices. I collaborated with designers and backend teams to deliver seamless, user-focused solutions.
+                    </div>
+            </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            
+        <div class="footer-first">
+            <h3>Shravani's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; Shravanisportfolio.com | All rights resserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
